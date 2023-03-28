@@ -22,7 +22,7 @@
 		A11BCEA429D39C4D00A2D3F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11BCEA929D39C4F00A2D3F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1A80B3D29D39E36004C9891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A1A80B3D29D39E36004C9891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD529E066AADDE35DEAB38C3 /* Pods-LightEqualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightEqualizer.release.xcconfig"; path = "Target Support Files/Pods-LightEqualizer/Pods-LightEqualizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,11 +76,9 @@
 		A11BCEA129D39C4D00A2D3F5 /* LightEqualizer */ = {
 			isa = PBXGroup;
 			children = (
-				A1A80B3D29D39E36004C9891 /* Info.plist */,
-				A11BCEA229D39C4D00A2D3F5 /* LightEqualizerApp.swift */,
-				A11BCEA429D39C4D00A2D3F5 /* ContentView.swift */,
-				A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */,
-				A11BCEA829D39C4F00A2D3F5 /* Preview Content */,
+				A1A80B3E29D3A110004C9891 /* App */,
+				A1A80B4029D3A145004C9891 /* Flow */,
+				A1A80B3F29D3A13E004C9891 /* Resources */,
 			);
 			path = LightEqualizer;
 			sourceTree = "<group>";
@@ -91,6 +89,32 @@
 				A11BCEA929D39C4F00A2D3F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1A80B3E29D3A110004C9891 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A11BCEA229D39C4D00A2D3F5 /* LightEqualizerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A1A80B3F29D3A13E004C9891 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */,
+				A1A80B3D29D39E36004C9891 /* Info.plist */,
+				A11BCEA829D39C4F00A2D3F5 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1A80B4029D3A145004C9891 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A11BCEA429D39C4D00A2D3F5 /* ContentView.swift */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,11 +361,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4X4Z9SSNGG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LightEqualizer/Info.plist;
+				INFOPLIST_FILE = LightEqualizer/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -367,11 +391,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4X4Z9SSNGG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LightEqualizer/Info.plist;
+				INFOPLIST_FILE = LightEqualizer/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
