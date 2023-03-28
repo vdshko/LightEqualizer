@@ -1,0 +1,10 @@
+xcassets:
+
+  # Assets
+  - inputs:
+    - LightEqualizer/Resources/XCAssets/Assets.xcassets
+    outputs:
+      templatePath: LightEqualizer/Resources/SwiftGen/Stencils/xcassets-swiftui.stencil
+      output: LightEqualizer/Resources/SwiftGen/Assets.swift
+      params:
+        publicAccess: true

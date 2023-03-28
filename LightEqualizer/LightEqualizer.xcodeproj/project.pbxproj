@@ -9,9 +9,15 @@
 /* Begin PBXBuildFile section */
 		66DED89256868C145B3FEB7A /* Pods_LightEqualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED918E3056886F8FE1DE085 /* Pods_LightEqualizer.framework */; };
 		A11BCEA329D39C4D00A2D3F5 /* LightEqualizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BCEA229D39C4D00A2D3F5 /* LightEqualizerApp.swift */; };
-		A11BCEA529D39C4D00A2D3F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BCEA429D39C4D00A2D3F5 /* ContentView.swift */; };
+		A11BCEA529D39C4D00A2D3F5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BCEA429D39C4D00A2D3F5 /* RootView.swift */; };
 		A11BCEA729D39C4E00A2D3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */; };
 		A11BCEAA29D39C4F00A2D3F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11BCEA929D39C4F00A2D3F5 /* Preview Assets.xcassets */; };
+		A1A80B4229D3A287004C9891 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A80B4129D3A287004C9891 /* RootViewModel.swift */; };
+		A1A80B4629D3A32C004C9891 /* BrightnessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A80B4529D3A32C004C9891 /* BrightnessService.swift */; };
+		A1A80B4F29D3ABB7004C9891 /* xcassets-swiftui.stencil in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B4E29D3ABB7004C9891 /* xcassets-swiftui.stencil */; };
+		A1A80B5329D3ADD7004C9891 /* run-swiftgen.sh in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B5129D3ADD7004C9891 /* run-swiftgen.sh */; };
+		A1A80B5429D3ADD7004C9891 /* run-swiftlint.sh in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B5229D3ADD7004C9891 /* run-swiftlint.sh */; };
+		A1A80B5A29D3AF0B004C9891 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A80B5929D3AF0B004C9891 /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +25,16 @@
 		7ED918E3056886F8FE1DE085 /* Pods_LightEqualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightEqualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11BCE9F29D39C4D00A2D3F5 /* LightEqualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightEqualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11BCEA229D39C4D00A2D3F5 /* LightEqualizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightEqualizerApp.swift; sourceTree = "<group>"; };
-		A11BCEA429D39C4D00A2D3F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A11BCEA429D39C4D00A2D3F5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11BCEA929D39C4F00A2D3F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1A80B3D29D39E36004C9891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1A80B4129D3A287004C9891 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		A1A80B4529D3A32C004C9891 /* BrightnessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessService.swift; sourceTree = "<group>"; };
+		A1A80B4E29D3ABB7004C9891 /* xcassets-swiftui.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "xcassets-swiftui.stencil"; sourceTree = "<group>"; };
+		A1A80B5129D3ADD7004C9891 /* run-swiftgen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-swiftgen.sh"; sourceTree = "<group>"; };
+		A1A80B5229D3ADD7004C9891 /* run-swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-swiftlint.sh"; sourceTree = "<group>"; };
+		A1A80B5929D3AF0B004C9891 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		BD529E066AADDE35DEAB38C3 /* Pods-LightEqualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightEqualizer.release.xcconfig"; path = "Target Support Files/Pods-LightEqualizer/Pods-LightEqualizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				A1A80B3E29D3A110004C9891 /* App */,
+				A1A80B4429D3A307004C9891 /* Common */,
 				A1A80B4029D3A145004C9891 /* Flow */,
 				A1A80B3F29D3A13E004C9891 /* Resources */,
+				A1A80B5029D3ADD7004C9891 /* scripts */,
 			);
 			path = LightEqualizer;
 			sourceTree = "<group>";
@@ -102,9 +116,9 @@
 		A1A80B3F29D3A13E004C9891 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */,
-				A1A80B3D29D39E36004C9891 /* Info.plist */,
-				A11BCEA829D39C4F00A2D3F5 /* Preview Content */,
+				A1A80B5C29D3B025004C9891 /* InfoPlists */,
+				A1A80B4C29D3ABB7004C9891 /* SwiftGen */,
+				A1A80B5B29D3B008004C9891 /* XCAssets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -112,9 +126,69 @@
 		A1A80B4029D3A145004C9891 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				A11BCEA429D39C4D00A2D3F5 /* ContentView.swift */,
+				A1A80B4329D3A2C7004C9891 /* RootView */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		A1A80B4329D3A2C7004C9891 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				A11BCEA429D39C4D00A2D3F5 /* RootView.swift */,
+				A1A80B4129D3A287004C9891 /* RootViewModel.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		A1A80B4429D3A307004C9891 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A1A80B4529D3A32C004C9891 /* BrightnessService.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A1A80B4C29D3ABB7004C9891 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				A1A80B5929D3AF0B004C9891 /* Assets.swift */,
+				A1A80B4D29D3ABB7004C9891 /* Stencils */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		A1A80B4D29D3ABB7004C9891 /* Stencils */ = {
+			isa = PBXGroup;
+			children = (
+				A1A80B4E29D3ABB7004C9891 /* xcassets-swiftui.stencil */,
+			);
+			path = Stencils;
+			sourceTree = "<group>";
+		};
+		A1A80B5029D3ADD7004C9891 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A1A80B5129D3ADD7004C9891 /* run-swiftgen.sh */,
+				A1A80B5229D3ADD7004C9891 /* run-swiftlint.sh */,
+			);
+			path = scripts;
+			sourceTree = SOURCE_ROOT;
+		};
+		A1A80B5B29D3B008004C9891 /* XCAssets */ = {
+			isa = PBXGroup;
+			children = (
+				A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */,
+				A11BCEA829D39C4F00A2D3F5 /* Preview Content */,
+			);
+			path = XCAssets;
+			sourceTree = "<group>";
+		};
+		A1A80B5C29D3B025004C9891 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				A1A80B3D29D39E36004C9891 /* Info.plist */,
+			);
+			path = InfoPlists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +201,8 @@
 				532A98C794DD97EBE95A01D3 /* [CP] Check Pods Manifest.lock */,
 				A11BCE9B29D39C4D00A2D3F5 /* Sources */,
 				A11BCE9C29D39C4D00A2D3F5 /* Frameworks */,
+				A1A80B4929D3AA56004C9891 /* SwiftGen */,
+				A1A80B4A29D3AA64004C9891 /* SwiftLint */,
 				A11BCE9D29D39C4D00A2D3F5 /* Resources */,
 				9C1E901F2782011E4B4CE371 /* [CP] Embed Pods Frameworks */,
 			);
@@ -178,7 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11BCEAA29D39C4F00A2D3F5 /* Preview Assets.xcassets in Resources */,
+				A1A80B5329D3ADD7004C9891 /* run-swiftgen.sh in Resources */,
+				A1A80B5429D3ADD7004C9891 /* run-swiftlint.sh in Resources */,
 				A11BCEA729D39C4E00A2D3F5 /* Assets.xcassets in Resources */,
+				A1A80B4F29D3ABB7004C9891 /* xcassets-swiftui.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +303,44 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LightEqualizer/Pods-LightEqualizer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A1A80B4929D3AA56004C9891 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/scripts/run-swiftgen.sh\n";
+		};
+		A1A80B4A29D3AA64004C9891 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/scripts/run-swiftlint.sh\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -231,7 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11BCEA529D39C4D00A2D3F5 /* ContentView.swift in Sources */,
+				A1A80B4629D3A32C004C9891 /* BrightnessService.swift in Sources */,
+				A11BCEA529D39C4D00A2D3F5 /* RootView.swift in Sources */,
+				A1A80B4229D3A287004C9891 /* RootViewModel.swift in Sources */,
+				A1A80B5A29D3AF0B004C9891 /* Assets.swift in Sources */,
 				A11BCEA329D39C4D00A2D3F5 /* LightEqualizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,11 +481,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Resources/XCAssets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4X4Z9SSNGG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LightEqualizer/Resources/Info.plist;
+				INFOPLIST_FILE = LightEqualizer/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -391,11 +511,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LightEqualizer/Resources/XCAssets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4X4Z9SSNGG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LightEqualizer/Resources/Info.plist;
+				INFOPLIST_FILE = LightEqualizer/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
