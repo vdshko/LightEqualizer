@@ -12,9 +12,9 @@ import Foundation
 public enum L10n {
 
   public enum PopUp {
-    public enum Message {
+    public enum Hint {
       /// Tap on the screen to show controls.
-      public static let title = L10n.tr("Localizable", "popUp.message.title")
+      public static let title = L10n.tr("Localizable", "popUp.hint.title")
     }
   }
 }

@@ -14,8 +14,9 @@ struct RootView: View {
     var body: some View {
         ZStack {
             background
-            message
+            hint
         }
+        .onAppear { viewModel.onAppear() }
     }
     
     private var background: some View {
@@ -23,20 +24,21 @@ struct RootView: View {
             .ignoresSafeArea()
     }
     
-    private var message: some View {
+    private var hint: some View {
         VStack {
             Spacer()
-            ZStack {
-                Text(L10n.PopUp.Message.title)
-                    .foregroundColor(Asset.Colors.Base.white.color)
-                    .padding(.horizontal, 24.0)
-                    .padding(.vertical, 32.0)
-            }
-            .background(
-                Asset.Colors.PopUp.background.color
-                    .cornerRadius(8.0)
-            )
+            Text(L10n.PopUp.Hint.title)
+                .foregroundColor(Asset.Colors.Base.white.color)
+                .padding(.horizontal, 24.0)
+                .padding(.vertical, 32.0)
+                .background(
+                    Asset.Colors.PopUp.background.color
+                        .cornerRadius(8.0)
+                )
         }
+        .offset(viewModel.hintOffset)
+        .animation(.linear(duration: 2.0), value: viewModel.isHintShown)
+        .allowsHitTesting(false)
     }
 }
 

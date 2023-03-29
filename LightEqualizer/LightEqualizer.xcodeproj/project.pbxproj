@@ -216,10 +216,10 @@
 			buildConfigurationList = A11BCEAD29D39C4F00A2D3F5 /* Build configuration list for PBXNativeTarget "LightEqualizer" */;
 			buildPhases = (
 				532A98C794DD97EBE95A01D3 /* [CP] Check Pods Manifest.lock */,
-				A11BCE9B29D39C4D00A2D3F5 /* Sources */,
-				A11BCE9C29D39C4D00A2D3F5 /* Frameworks */,
 				A1A80B4929D3AA56004C9891 /* SwiftGen */,
 				A1A80B4A29D3AA64004C9891 /* SwiftLint */,
+				A11BCE9B29D39C4D00A2D3F5 /* Sources */,
+				A11BCE9C29D39C4D00A2D3F5 /* Frameworks */,
 				A11BCE9D29D39C4D00A2D3F5 /* Resources */,
 				9C1E901F2782011E4B4CE371 /* [CP] Embed Pods Frameworks */,
 			);

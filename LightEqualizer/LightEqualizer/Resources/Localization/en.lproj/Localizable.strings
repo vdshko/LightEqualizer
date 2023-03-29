@@ -8,4 +8,4 @@
 
 // MARK: - PopUp
 
-"popUp.message.title" = "Tap on the screen to show controls.";
+"popUp.hint.title" = "Tap on the screen to show controls.";
