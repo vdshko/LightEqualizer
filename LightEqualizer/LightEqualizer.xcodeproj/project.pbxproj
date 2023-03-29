@@ -23,6 +23,10 @@
 		A1AE950829D3B6F400B14C6C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE950729D3B6F400B14C6C /* Strings.swift */; };
 		A1E37F2D29D484F000F19B36 /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F2B29D484F000F19B36 /* HintView.swift */; };
 		A1E37F2E29D484F000F19B36 /* HintViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F2C29D484F000F19B36 /* HintViewModel.swift */; };
+		A1E37F3329D4BAF300F19B36 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F3129D4BAF300F19B36 /* ControlsView.swift */; };
+		A1E37F3429D4BAF300F19B36 /* ControlsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F3229D4BAF300F19B36 /* ControlsViewModel.swift */; };
+		A1E37F3629D4BE0900F19B36 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F3529D4BE0900F19B36 /* AppState.swift */; };
+		A1E37F3829D4C2EF00F19B36 /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F3729D4C2EF00F19B36 /* VerticalSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		A1AE950729D3B6F400B14C6C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A1E37F2B29D484F000F19B36 /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
 		A1E37F2C29D484F000F19B36 /* HintViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintViewModel.swift; sourceTree = "<group>"; };
+		A1E37F3129D4BAF300F19B36 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		A1E37F3229D4BAF300F19B36 /* ControlsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsViewModel.swift; sourceTree = "<group>"; };
+		A1E37F3529D4BE0900F19B36 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A1E37F3729D4C2EF00F19B36 /* VerticalSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSlider.swift; sourceTree = "<group>"; };
 		BD529E066AADDE35DEAB38C3 /* Pods-LightEqualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightEqualizer.release.xcconfig"; path = "Target Support Files/Pods-LightEqualizer/Pods-LightEqualizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +145,7 @@
 		A1A80B4029D3A145004C9891 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				A1E37F3029D4BADD00F19B36 /* ControlsView */,
 				A1E37F2F29D484F600F19B36 /* HintView */,
 				A1A80B4329D3A2C7004C9891 /* RootView */,
 			);
@@ -155,7 +164,9 @@
 		A1A80B4429D3A307004C9891 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A1E37F3529D4BE0900F19B36 /* AppState.swift */,
 				A1A80B4529D3A32C004C9891 /* BrightnessService.swift */,
+				A1E37F3729D4C2EF00F19B36 /* VerticalSlider.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -220,6 +231,15 @@
 				A1E37F2C29D484F000F19B36 /* HintViewModel.swift */,
 			);
 			path = HintView;
+			sourceTree = "<group>";
+		};
+		A1E37F3029D4BADD00F19B36 /* ControlsView */ = {
+			isa = PBXGroup;
+			children = (
+				A1E37F3129D4BAF300F19B36 /* ControlsView.swift */,
+				A1E37F3229D4BAF300F19B36 /* ControlsViewModel.swift */,
+			);
+			path = ControlsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,11 +401,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E37F3429D4BAF300F19B36 /* ControlsViewModel.swift in Sources */,
 				A1A80B4629D3A32C004C9891 /* BrightnessService.swift in Sources */,
+				A1E37F3329D4BAF300F19B36 /* ControlsView.swift in Sources */,
 				A11BCEA529D39C4D00A2D3F5 /* RootView.swift in Sources */,
 				A1A80B4229D3A287004C9891 /* RootViewModel.swift in Sources */,
 				A1A80B5A29D3AF0B004C9891 /* Assets.swift in Sources */,
+				A1E37F3629D4BE0900F19B36 /* AppState.swift in Sources */,
 				A1E37F2D29D484F000F19B36 /* HintView.swift in Sources */,
+				A1E37F3829D4C2EF00F19B36 /* VerticalSlider.swift in Sources */,
 				A1E37F2E29D484F000F19B36 /* HintViewModel.swift in Sources */,
 				A1AE950829D3B6F400B14C6C /* Strings.swift in Sources */,
 				A11BCEA329D39C4D00A2D3F5 /* LightEqualizerApp.swift in Sources */,

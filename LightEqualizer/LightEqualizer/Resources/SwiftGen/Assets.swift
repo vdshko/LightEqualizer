@@ -15,6 +15,7 @@ public enum Asset {
   }
   public enum Colors {
     public enum Base {
+      public static let black = ColorAsset(name: "Base/black")
       public static let white = ColorAsset(name: "Base/white")
     }
     public enum PopUp {
