@@ -34,7 +34,7 @@ private extension RootViewModel {
             }
             timer.invalidate()
         }
-        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: timerBlock)
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: timerBlock)
+        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: timerBlock) // show hint
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: timerBlock) // hide hint
     }
 }
