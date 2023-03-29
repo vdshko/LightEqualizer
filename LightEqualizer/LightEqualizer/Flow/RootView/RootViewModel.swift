@@ -13,6 +13,17 @@ extension RootView {
         
         @Published var selectedColor: Color = Asset.Colors.Base.white.color
         
-        private let brightnessService: BrightnessService = BrightnessServiceImpl()
+        init() {
+            setupBinding()
+        }
+    }
+}
+
+private extension RootView.RootViewModel {
+    
+    func setupBinding() {
+        AppState.shared.$lightColor
+            .receive(on: DispatchQueue.main)
+            .assign(to: &$selectedColor)
     }
 }
