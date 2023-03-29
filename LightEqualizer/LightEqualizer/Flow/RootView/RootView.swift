@@ -14,31 +14,13 @@ struct RootView: View {
     var body: some View {
         ZStack {
             background
-            hint
+            HintView()
         }
-        .onAppear { viewModel.onAppear() }
     }
     
     private var background: some View {
         viewModel.selectedColor
             .ignoresSafeArea()
-    }
-    
-    private var hint: some View {
-        VStack {
-            Spacer()
-            Text(L10n.PopUp.Hint.title)
-                .foregroundColor(Asset.Colors.Base.white.color)
-                .padding(.horizontal, 24.0)
-                .padding(.vertical, 32.0)
-                .background(
-                    Asset.Colors.PopUp.background.color
-                        .cornerRadius(8.0)
-                )
-        }
-        .offset(viewModel.hintOffset)
-        .animation(.linear(duration: 2.0), value: viewModel.isHintShown)
-        .allowsHitTesting(false)
     }
 }
 
