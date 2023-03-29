@@ -18,6 +18,9 @@
 		A1A80B5329D3ADD7004C9891 /* run-swiftgen.sh in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B5129D3ADD7004C9891 /* run-swiftgen.sh */; };
 		A1A80B5429D3ADD7004C9891 /* run-swiftlint.sh in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B5229D3ADD7004C9891 /* run-swiftlint.sh */; };
 		A1A80B5A29D3AF0B004C9891 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A80B5929D3AF0B004C9891 /* Assets.swift */; };
+		A1A80B5E29D3B25A004C9891 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B5D29D3B25A004C9891 /* Colors.xcassets */; };
+		A1AE950429D3B66A00B14C6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1AE950629D3B66A00B14C6C /* Localizable.strings */; };
+		A1AE950829D3B6F400B14C6C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE950729D3B6F400B14C6C /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		A1A80B5129D3ADD7004C9891 /* run-swiftgen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-swiftgen.sh"; sourceTree = "<group>"; };
 		A1A80B5229D3ADD7004C9891 /* run-swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-swiftlint.sh"; sourceTree = "<group>"; };
 		A1A80B5929D3AF0B004C9891 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		A1A80B5D29D3B25A004C9891 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A1AE950529D3B66A00B14C6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A1AE950729D3B6F400B14C6C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BD529E066AADDE35DEAB38C3 /* Pods-LightEqualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightEqualizer.release.xcconfig"; path = "Target Support Files/Pods-LightEqualizer/Pods-LightEqualizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A80B5C29D3B025004C9891 /* InfoPlists */,
+				A1A80B5F29D3B30A004C9891 /* Localization */,
 				A1A80B4C29D3ABB7004C9891 /* SwiftGen */,
 				A1A80B5B29D3B008004C9891 /* XCAssets */,
 			);
@@ -153,6 +160,7 @@
 			children = (
 				A1A80B5929D3AF0B004C9891 /* Assets.swift */,
 				A1A80B4D29D3ABB7004C9891 /* Stencils */,
+				A1AE950729D3B6F400B14C6C /* Strings.swift */,
 			);
 			path = SwiftGen;
 			sourceTree = "<group>";
@@ -178,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */,
+				A1A80B5D29D3B25A004C9891 /* Colors.xcassets */,
 				A11BCEA829D39C4F00A2D3F5 /* Preview Content */,
 			);
 			path = XCAssets;
@@ -189,6 +198,14 @@
 				A1A80B3D29D39E36004C9891 /* Info.plist */,
 			);
 			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		A1A80B5F29D3B30A004C9891 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A1AE950629D3B66A00B14C6C /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +273,8 @@
 				A11BCEAA29D39C4F00A2D3F5 /* Preview Assets.xcassets in Resources */,
 				A1A80B5329D3ADD7004C9891 /* run-swiftgen.sh in Resources */,
 				A1A80B5429D3ADD7004C9891 /* run-swiftlint.sh in Resources */,
+				A1AE950429D3B66A00B14C6C /* Localizable.strings in Resources */,
+				A1A80B5E29D3B25A004C9891 /* Colors.xcassets in Resources */,
 				A11BCEA729D39C4E00A2D3F5 /* Assets.xcassets in Resources */,
 				A1A80B4F29D3ABB7004C9891 /* xcassets-swiftui.stencil in Resources */,
 			);
@@ -352,11 +371,23 @@
 				A11BCEA529D39C4D00A2D3F5 /* RootView.swift in Sources */,
 				A1A80B4229D3A287004C9891 /* RootViewModel.swift in Sources */,
 				A1A80B5A29D3AF0B004C9891 /* Assets.swift in Sources */,
+				A1AE950829D3B6F400B14C6C /* Strings.swift in Sources */,
 				A11BCEA329D39C4D00A2D3F5 /* LightEqualizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1AE950629D3B66A00B14C6C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1AE950529D3B66A00B14C6C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A11BCEAB29D39C4F00A2D3F5 /* Debug */ = {

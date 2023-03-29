@@ -11,9 +11,15 @@ import UIKit
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Asset {
-  public enum PopUp {
-
-    public static let background = ColorAsset(name: "PopUp/background")
+  public enum Assets {
+  }
+  public enum Colors {
+    public enum Base {
+      public static let white = ColorAsset(name: "Base/white")
+    }
+    public enum PopUp {
+      public static let background = ColorAsset(name: "PopUp/background")
+    }
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

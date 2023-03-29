@@ -3,8 +3,18 @@ xcassets:
   # Assets
   - inputs:
     - LightEqualizer/Resources/XCAssets/Assets.xcassets
+    - LightEqualizer/Resources/XCAssets/Colors.xcassets
     outputs:
       templatePath: LightEqualizer/Resources/SwiftGen/Stencils/xcassets-swiftui.stencil
       output: LightEqualizer/Resources/SwiftGen/Assets.swift
+      params:
+        publicAccess: true
+
+strings:
+  - inputs:
+    - LightEqualizer/Resources/Localization/en.lproj/Localizable.strings
+    outputs:
+      output: LightEqualizer/Resources/SwiftGen/Strings.swift
+      templateName: structured-swift5
       params:
         publicAccess: true

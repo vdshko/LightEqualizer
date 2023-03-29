@@ -14,6 +14,7 @@ struct RootView: View {
     var body: some View {
         ZStack {
             background
+            message
         }
     }
     
@@ -23,13 +24,19 @@ struct RootView: View {
     }
     
     private var message: some View {
-        ZStack {
-            
+        VStack {
+            Spacer()
+            ZStack {
+                Text(L10n.PopUp.Message.title)
+                    .foregroundColor(Asset.Colors.Base.white.color)
+                    .padding(.horizontal, 24.0)
+                    .padding(.vertical, 32.0)
+            }
+            .background(
+                Asset.Colors.PopUp.background.color
+                    .cornerRadius(8.0)
+            )
         }
-        .background(
-            RoundedRectangle(cornerRadius: 8.0)
-                .background(Asset.PopUp.background.color)
-        )
     }
 }
 
