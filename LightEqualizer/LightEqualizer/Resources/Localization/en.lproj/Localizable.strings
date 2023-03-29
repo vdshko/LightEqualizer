@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LightEqualizer
+
+  Created by Vladyslav Shkodych on 29.03.2023.
+  
+*/
+
+// MARK: - PopUp
+
+"popUp.message.title" = "Tap on the screen to show controls.";
