@@ -21,6 +21,8 @@
 		A1A80B5E29D3B25A004C9891 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B5D29D3B25A004C9891 /* Colors.xcassets */; };
 		A1AE950429D3B66A00B14C6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1AE950629D3B66A00B14C6C /* Localizable.strings */; };
 		A1AE950829D3B6F400B14C6C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE950729D3B6F400B14C6C /* Strings.swift */; };
+		A1E37F2D29D484F000F19B36 /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F2B29D484F000F19B36 /* HintView.swift */; };
+		A1E37F2E29D484F000F19B36 /* HintViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E37F2C29D484F000F19B36 /* HintViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		A1A80B5D29D3B25A004C9891 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A1AE950529D3B66A00B14C6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1AE950729D3B6F400B14C6C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A1E37F2B29D484F000F19B36 /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
+		A1E37F2C29D484F000F19B36 /* HintViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintViewModel.swift; sourceTree = "<group>"; };
 		BD529E066AADDE35DEAB38C3 /* Pods-LightEqualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightEqualizer.release.xcconfig"; path = "Target Support Files/Pods-LightEqualizer/Pods-LightEqualizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +137,7 @@
 		A1A80B4029D3A145004C9891 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				A1E37F2F29D484F600F19B36 /* HintView */,
 				A1A80B4329D3A2C7004C9891 /* RootView */,
 			);
 			path = Flow;
@@ -206,6 +211,15 @@
 				A1AE950629D3B66A00B14C6C /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		A1E37F2F29D484F600F19B36 /* HintView */ = {
+			isa = PBXGroup;
+			children = (
+				A1E37F2B29D484F000F19B36 /* HintView.swift */,
+				A1E37F2C29D484F000F19B36 /* HintViewModel.swift */,
+			);
+			path = HintView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +385,8 @@
 				A11BCEA529D39C4D00A2D3F5 /* RootView.swift in Sources */,
 				A1A80B4229D3A287004C9891 /* RootViewModel.swift in Sources */,
 				A1A80B5A29D3AF0B004C9891 /* Assets.swift in Sources */,
+				A1E37F2D29D484F000F19B36 /* HintView.swift in Sources */,
+				A1E37F2E29D484F000F19B36 /* HintViewModel.swift in Sources */,
 				A1AE950829D3B6F400B14C6C /* Strings.swift in Sources */,
 				A11BCEA329D39C4D00A2D3F5 /* LightEqualizerApp.swift in Sources */,
 			);
