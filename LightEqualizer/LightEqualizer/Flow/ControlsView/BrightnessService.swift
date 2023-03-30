@@ -7,10 +7,11 @@
 
 import class UIKit.UIScreen
 import AVFoundation
+import Combine
 
 protocol BrightnessService: AnyObject {
     
-    var brightness: CGFloat { get }
+    var brightness: CurrentValueSubject<CGFloat, Never> { get set }
     var isFlashlightActive: Bool { get }
     
     func toggleFlashLight() throws
@@ -19,13 +20,17 @@ protocol BrightnessService: AnyObject {
 
 final class BrightnessServiceImpl: BrightnessService {
     
-    var brightness: CGFloat {
-        return UIScreen.main.brightness
-    }
+    var brightness: CurrentValueSubject<CGFloat, Never> = CurrentValueSubject<CGFloat, Never>(UIScreen.main.brightness)
     
     var isFlashlightActive: Bool {
         guard let device = AVCaptureDevice.default(for: AVMediaType.video) else { return false }
         return device.hasTorch && device.isTorchActive
+    }
+    
+    private var cancelBag: Set<AnyCancellable> = Set<AnyCancellable>()
+    
+    init() {
+        setupBinding()
     }
     
     func toggleFlashLight() throws {
@@ -39,5 +44,14 @@ final class BrightnessServiceImpl: BrightnessService {
     
     func adjustBrightness(value: CGFloat) {
         UIScreen.main.brightness = value
+    }
+    
+    func setupBinding() {
+        NotificationCenter.default
+            .publisher(for: UIScreen.brightnessDidChangeNotification)
+            .sink { [weak self] _ in
+                self?.brightness.send(UIScreen.main.brightness)
+            }
+            .store(in: &cancelBag)
     }
 }
