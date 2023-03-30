@@ -32,6 +32,8 @@ private extension ControlsView.ControlsViewModel {
         brightnessValue = brightnessService.brightness
         isFlashlightActive = brightnessService.isFlashlightActive
         $selectedColor
+            .dropFirst()
+            .removeDuplicates()
             .assign(to: &AppState.shared.$lightColor)
         $brightnessValue
             .removeDuplicates()

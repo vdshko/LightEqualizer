@@ -32,15 +32,15 @@ extension HintView {
 private extension HintView.HintViewModel {
     
     func setupTimers() {
-        let timerBlock: (Timer) -> Void = { [weak self] timer in
+        let timerBlock: (Timer?) -> Void = { [weak self] timer in
             DispatchQueue.main.async {
                 withAnimation {
                     self?.isHintShown.toggle()
                 }
             }
-            timer.invalidate()
+            timer?.invalidate()
         }
-        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: timerBlock) // show hint
+        timerBlock(nil) // show hint
         hideTimer = Timer.scheduledTimer(withTimeInterval: 6.0, repeats: false, block: timerBlock)
     }
 }
