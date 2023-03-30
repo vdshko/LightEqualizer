@@ -46,7 +46,7 @@ final class BrightnessServiceImpl: BrightnessService {
         UIScreen.main.brightness = value
     }
     
-    func setupBinding() {
+    private func setupBinding() {
         NotificationCenter.default
             .publisher(for: UIScreen.brightnessDidChangeNotification)
             .sink { [weak self] _ in
