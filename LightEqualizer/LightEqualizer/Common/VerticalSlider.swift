@@ -60,9 +60,18 @@ struct VerticalSlider: View {
 
 struct VerticalSlider_Previews: PreviewProvider {
     
+    private struct VerticalSliderContainer: View {
+        
+        @State var value: CGFloat = 0.78
+        
+        var body: some View {
+            VerticalSlider(value: $value)
+                .frame(maxWidth: .infinity)
+                .background(Asset.Colors.PopUp.background.color)
+        }
+    }
+    
     static var previews: some View {
-        VerticalSlider(value: .constant(0.78))
-            .frame(maxWidth: .infinity)
-            .background(Asset.Colors.PopUp.background.color)
+        VerticalSliderContainer()
     }
 }
