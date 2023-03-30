@@ -107,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				A1A80B3E29D3A110004C9891 /* App */,
-				A1A80B4429D3A307004C9891 /* Common */,
 				A1A80B4029D3A145004C9891 /* Flow */,
 				A1A80B3F29D3A13E004C9891 /* Resources */,
 				A1A80B5029D3ADD7004C9891 /* scripts */,
@@ -123,9 +122,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A15A10D229D5A0EB00A141EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1E37F3129D4BAF300F19B36 /* ControlsView.swift */,
+				A1E37F3229D4BAF300F19B36 /* ControlsViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1A80B3E29D3A110004C9891 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A1E37F3529D4BE0900F19B36 /* AppState.swift */,
 				A11BCEA229D39C4D00A2D3F5 /* LightEqualizerApp.swift */,
 			);
 			path = App;
@@ -159,16 +168,6 @@
 				A1A80B4129D3A287004C9891 /* RootViewModel.swift */,
 			);
 			path = RootView;
-			sourceTree = "<group>";
-		};
-		A1A80B4429D3A307004C9891 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				A1E37F3529D4BE0900F19B36 /* AppState.swift */,
-				A1A80B4529D3A32C004C9891 /* BrightnessService.swift */,
-				A1E37F3729D4C2EF00F19B36 /* VerticalSlider.swift */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		A1A80B4C29D3ABB7004C9891 /* SwiftGen */ = {
@@ -236,8 +235,9 @@
 		A1E37F3029D4BADD00F19B36 /* ControlsView */ = {
 			isa = PBXGroup;
 			children = (
-				A1E37F3129D4BAF300F19B36 /* ControlsView.swift */,
-				A1E37F3229D4BAF300F19B36 /* ControlsViewModel.swift */,
+				A1A80B4529D3A32C004C9891 /* BrightnessService.swift */,
+				A1E37F3729D4C2EF00F19B36 /* VerticalSlider.swift */,
+				A15A10D229D5A0EB00A141EA /* View */,
 			);
 			path = ControlsView;
 			sourceTree = "<group>";
