@@ -12,6 +12,7 @@
 		A11BCEA529D39C4D00A2D3F5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BCEA429D39C4D00A2D3F5 /* RootView.swift */; };
 		A11BCEA729D39C4E00A2D3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */; };
 		A11BCEAA29D39C4F00A2D3F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11BCEA929D39C4F00A2D3F5 /* Preview Assets.xcassets */; };
+		A15A10D429D5BFBE00A141EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15A10D329D5BFBE00A141EA /* LaunchScreen.storyboard */; };
 		A1A80B4229D3A287004C9891 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A80B4129D3A287004C9891 /* RootViewModel.swift */; };
 		A1A80B4629D3A32C004C9891 /* BrightnessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A80B4529D3A32C004C9891 /* BrightnessService.swift */; };
 		A1A80B4F29D3ABB7004C9891 /* xcassets-swiftui.stencil in Resources */ = {isa = PBXBuildFile; fileRef = A1A80B4E29D3ABB7004C9891 /* xcassets-swiftui.stencil */; };
@@ -37,6 +38,7 @@
 		A11BCEA429D39C4D00A2D3F5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		A11BCEA629D39C4E00A2D3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11BCEA929D39C4F00A2D3F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A15A10D329D5BFBE00A141EA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1A80B3D29D39E36004C9891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1A80B4129D3A287004C9891 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		A1A80B4529D3A32C004C9891 /* BrightnessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessService.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A80B5C29D3B025004C9891 /* InfoPlists */,
+				A15A10D329D5BFBE00A141EA /* LaunchScreen.storyboard */,
 				A1A80B5F29D3B30A004C9891 /* Localization */,
 				A1A80B4C29D3ABB7004C9891 /* SwiftGen */,
 				A1A80B5B29D3B008004C9891 /* XCAssets */,
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11BCEAA29D39C4F00A2D3F5 /* Preview Assets.xcassets in Resources */,
+				A15A10D429D5BFBE00A141EA /* LaunchScreen.storyboard in Resources */,
 				A1A80B5329D3ADD7004C9891 /* run-swiftgen.sh in Resources */,
 				A1A80B5429D3ADD7004C9891 /* run-swiftlint.sh in Resources */,
 				A1AE950429D3B66A00B14C6C /* Localizable.strings in Resources */,
@@ -557,9 +561,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LightEqualizer/Resources/InfoPlists/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Light Equalizer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -588,9 +591,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LightEqualizer/Resources/InfoPlists/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Light Equalizer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
