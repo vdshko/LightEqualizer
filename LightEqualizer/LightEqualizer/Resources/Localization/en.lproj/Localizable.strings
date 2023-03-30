@@ -15,3 +15,7 @@
 "controls.brightness.title" = "Brightness";
 "controls.flashlight.title" = "Flashlight";
 "controls.backgroundColor.title" = "Background color";
+
+// MARK: - Root
+
+"root.title" = "Light Equalizer";
