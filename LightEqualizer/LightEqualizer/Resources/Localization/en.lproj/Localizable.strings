@@ -8,4 +8,10 @@
 
 // MARK: - PopUp
 
-"popUp.hint.title" = "Tap on the screen to show controls.";
+"popUp.hint.title" = "Tap on the screen to hide/show controls.";
+
+// MARK: - Controls
+
+"controls.brightness.title" = "Brightness";
+"controls.flashlight.title" = "Flashlight";
+"controls.backgroundColor.title" = "Background color";

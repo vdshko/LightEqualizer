@@ -18,7 +18,9 @@ struct VerticalSlider: View {
         ZStack {
             GeometryReader { proxy in
                 Asset.Colors.Base.black.color
+                    .gesture(drag)
                 Asset.Colors.Base.white.color
+                    .allowsHitTesting(false)
                     .offset(y: height - height * binary(value))
                     .onAppear { height = proxy.size.height }
             }
@@ -27,7 +29,6 @@ struct VerticalSlider: View {
         .frame(width: 100.0)
         .cornerRadius(24.0)
         .frame(minHeight: 150.0)
-        .gesture(drag)
     }
     
     private var drag: some Gesture {
