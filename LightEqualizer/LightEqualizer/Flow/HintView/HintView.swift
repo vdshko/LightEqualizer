@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HintView: View {
     
-    @ObservedObject var viewModel: HintViewModel = HintViewModel()
+    @StateObject var viewModel: HintViewModel = HintViewModel()
 
     var body: some View {
         VStack {

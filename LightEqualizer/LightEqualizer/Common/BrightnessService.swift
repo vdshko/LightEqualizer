@@ -8,13 +8,25 @@
 import class UIKit.UIScreen
 import AVFoundation
 
-protocol BrightnessService {
+protocol BrightnessService: AnyObject {
+    
+    var brightness: CGFloat { get }
+    var isFlashlightActive: Bool { get }
     
     func toggleFlashLight() throws
     func adjustBrightness(value: CGFloat)
 }
 
 final class BrightnessServiceImpl: BrightnessService {
+    
+    var brightness: CGFloat {
+        return UIScreen.main.brightness
+    }
+    
+    var isFlashlightActive: Bool {
+        guard let device = AVCaptureDevice.default(for: AVMediaType.video) else { return false }
+        return device.hasTorch && device.isTorchActive
+    }
     
     func toggleFlashLight() throws {
         guard let device = AVCaptureDevice.default(for: AVMediaType.video),

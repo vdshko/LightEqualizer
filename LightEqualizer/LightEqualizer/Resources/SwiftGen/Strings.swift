@@ -11,9 +11,24 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum Controls {
+    public enum BackgroundColor {
+      /// Background color
+      public static let title = L10n.tr("Localizable", "controls.backgroundColor.title")
+    }
+    public enum Brightness {
+      /// Brightness
+      public static let title = L10n.tr("Localizable", "controls.brightness.title")
+    }
+    public enum Flashlight {
+      /// Flashlight
+      public static let title = L10n.tr("Localizable", "controls.flashlight.title")
+    }
+  }
+
   public enum PopUp {
     public enum Hint {
-      /// Tap on the screen to show controls.
+      /// Tap on the screen to hide/show controls.
       public static let title = L10n.tr("Localizable", "popUp.hint.title")
     }
   }
