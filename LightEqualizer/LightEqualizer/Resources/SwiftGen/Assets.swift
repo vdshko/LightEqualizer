@@ -12,6 +12,7 @@ import UIKit
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Asset {
   public enum Assets {
+    public static let launchScreen = ImageAsset(name: "LaunchScreen")
   }
   public enum Colors {
     public enum Base {
