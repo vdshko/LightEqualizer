@@ -29,7 +29,14 @@ extension ControlsView {
 private extension ControlsView.ControlsViewModel {
     
     func setupBinding() {
-        brightnessValue = brightnessService.brightness
+        brightnessService.brightness
+            .removeDuplicates()
+            .sink { [weak self] value in
+                withAnimation {
+                    self?.brightnessValue = value
+                }
+            }
+            .store(in: &cancelBag)
         isFlashlightActive = brightnessService.isFlashlightActive
         $selectedColor
             .dropFirst()
