@@ -12,9 +12,16 @@ extension RootView {
     final class RootViewModel: ObservableObject {
         
         @Published var selectedColor: Color = Asset.Colors.Base.white.color
+        @Published var isControlsShown: Bool = true
         
         init() {
             setupBinding()
+        }
+        
+        func screenTapped() {
+            withAnimation(.linear(duration: 0.3)) {
+                isControlsShown.toggle()
+            }
         }
     }
 }
