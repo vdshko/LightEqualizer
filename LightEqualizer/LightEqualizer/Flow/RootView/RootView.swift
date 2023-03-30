@@ -25,8 +25,14 @@ struct RootView: View {
             HStack {
                 Spacer(minLength: 0.0)
                 Text(L10n.Root.title)
+                    .foregroundColor(Asset.Colors.Base.white)
                     .font(.title)
                     .bold()
+                    .padding(8.0)
+                    .background(
+                        Asset.Colors.PopUp.background.color
+                            .cornerRadius(8.0)
+                    )
                 Spacer(minLength: 0.0)
             }
             .padding(.top, 32.0)
